@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    <title>Navigation Bar</title>
+  </head>
+  <body class="body__grid">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__link" data-link="section-1">
+          <ion-icon name="person" class="nav__link-svg"></ion-icon>
+        </li>
+        <li class="nav__link" data-link="section-2">
+          <ion-icon name="file-tray-full" class="nav__link-svg"></ion-icon>
+        </li>
+        <li class="nav__link" data-link="section-3">
+          <ion-icon name="mail" class="nav__link-svg"></ion-icon>
+        </li>
+      </ul>
+    </nav>
+    <section class="main">
+      <div class="control">
+        <div class="btn btn__left" data-position="left">
+          <ion-icon name="caret-up"></ion-icon>
+        </div>
+        <div class="btn btn__right" data-position="right">
+          <ion-icon name="caret-up"></ion-icon>
+        </div>
+      </div>
+
+      <div class="goo-container">
+        <svg
+          class="goo"
+          viewBox="0 0 198 640"
+          version="1.1"
+          style="
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            stroke-linejoin: round;
+            stroke-miterlimit: 2;
+          "
+        >
+          <path
+            class="goo--path"
+            d="M172.718,614.83c-0.338,-178.625 -147.718,-197.158 -147.718,-297.894c-0,-100.735 147.586,-119.769 147.718,-291.936"
+          />
+          <rect
+            class="goo--rect"
+            x="170.508"
+            y="34.715"
+            width="100.345"
+            height="589.83"
+          />
+        </svg>
+      </div>
+      <div class="main__section main__section-1" data-link="section-1">
+        <div class="image__container"></div>
+      </div>
+      <div class="main__section main__section-2" data-link="section-2">
+        <div class="image__container"></div>
+      </div>
+      <div class="main__section main__section-3" data-link="section-3">
+        <div class="image__container"></div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
